@@ -1,139 +1,12 @@
-# 🚀 Alfath Roziq Widhayaka — Personal Portfolio
+# Alfath Roziq Widhayaka — Portfolio
 
-A **modern, premium, and responsive** personal portfolio website built with React.js, TypeScript, Vite, and Tailwind CSS.
+Personal portfolio website built with React, TypeScript, Vite, and Tailwind CSS.
 
-## ✨ Features
+Live: [alfathroziqq.github.io/portofolio-alfath](https://alfathroziqq.github.io/portofolio-alfath/)
 
-- ⚡ **Lightning-fast** — Vite build tooling
-- 🎨 **Premium dark UI** — Glassmorphism, gradient accents, animated elements
-- 📱 **Fully responsive** — Mobile, tablet, and desktop
-- 🎭 **Smooth animations** — Framer Motion scroll reveals, hover effects
-- 🧭 **Smart navbar** — Active section detection, mobile menu
-- 📝 **Contact form** — Validation + ready for EmailJS integration
-- 🔍 **SEO ready** — Proper meta tags, Open Graph
-- 🗂️ **Centralized data** — Edit one file to update all content
+---
 
-## 📁 Project Structure
-
-```
-src/
-├── components/
-│   ├── layout/
-│   │   ├── Navbar.tsx
-│   │   ├── Footer.tsx
-│   │   └── BackToTop.tsx
-│   └── sections/
-│       ├── Hero.tsx
-│       ├── About.tsx
-│       ├── Skills.tsx
-│       ├── Projects.tsx
-│       ├── Organizations.tsx
-│       ├── Achievements.tsx
-│       └── Contact.tsx
-├── data/
-│   └── portfolio.ts      ← ✏️ Edit your content here
-├── hooks/
-│   ├── useActiveSection.ts
-│   └── useScrollAnimation.ts
-├── utils/
-│   └── scroll.ts
-├── App.tsx
-├── main.tsx
-└── index.css
-```
-
-## 🛠️ Getting Started
-
-### Prerequisites
-- Node.js 18+
-- npm
-
-### Install & Run
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Open http://localhost:5173
-```
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-The build output will be in the `dist/` folder.
-
-## ✏️ Customizing Your Content
-
-**All content is centralized in one file:** `src/data/portfolio.ts`
-
-Edit this file to update:
-- Personal information (name, role, bio, contact, links)
-- Skills by category
-- Projects (title, description, tech stack, links)
-- Organizations & community involvement
-- Achievements & certifications
-
-## 📧 Setting Up Contact Form (EmailJS)
-
-1. Create a free account at [emailjs.com](https://emailjs.com)
-2. Create an email service and template
-3. Update `src/components/sections/Contact.tsx`:
-   ```tsx
-   import emailjs from '@emailjs/browser';
-   
-   // Replace the setTimeout simulation with:
-   emailjs.send(
-     'YOUR_SERVICE_ID',
-     'YOUR_TEMPLATE_ID',
-     { name: form.name, email: form.email, message: form.message },
-     'YOUR_PUBLIC_KEY'
-   ).then(() => setStatus('success'));
-   ```
-
-## 🚀 Deploying to GitHub Pages
-
-### Step 1: Update `vite.config.ts`
-
-Replace `base: './'` with your repo name:
-```ts
-base: '/your-repo-name/',
-```
-
-### Step 2: Install gh-pages
-
-```bash
-npm install -D gh-pages
-```
-
-### Step 3: Add scripts to `package.json`
-
-```json
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
-```
-
-### Step 4: Deploy
-
-```bash
-npm run deploy
-```
-
-Your site will be live at: `https://your-username.github.io/your-repo-name/`
-
-## 🚀 Deploying to Vercel / Netlify
-
-Simply connect your GitHub repository — both platforms auto-detect Vite projects.
-No additional configuration required.
-
-## 🧰 Tech Stack
+## Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -142,13 +15,63 @@ No additional configuration required.
 | Vite | Build Tool |
 | Tailwind CSS v4 | Styling |
 | Framer Motion | Animations |
-| Lucide React | Icons |
-| React Icons | Extended Icons |
+| Lucide React + React Icons | Icons |
+| EmailJS | Contact Form |
 
-## 📄 License
+## Project Structure
 
-MIT License — free to use and customize.
+```
+src/
+├── components/
+│   ├── layout/         # Navbar, Footer, BackToTop
+│   └── sections/       # Hero, About, Skills, Projects, Organizations, Achievements, Contact
+├── config/
+│   └── emailjs.ts      # EmailJS credentials
+├── data/
+│   └── portfolio.ts    # All content lives here — edit this file
+├── hooks/
+└── utils/
+```
+
+## Getting Started
+
+```bash
+npm install
+npm run dev       # http://localhost:5173
+npm run build     # production build → dist/
+npm run deploy    # deploy to GitHub Pages
+```
+
+## Updating Your Content
+
+Everything — name, bio, skills, projects, experience, contact links — is in one file:
+
+```
+src/data/portfolio.ts
+```
+
+Edit that file and your changes will reflect across all sections automatically.
+
+## Contact Form (EmailJS)
+
+Credentials are stored in `src/config/emailjs.ts`. To reconfigure:
+
+1. Go to [emailjs.com](https://emailjs.com) and open your account
+2. Update the `serviceId`, `templateId`, and `publicKey` values in the config file
+
+## Deployment
+
+The site is deployed to GitHub Pages via the `gh-pages` branch.
+
+To redeploy after making changes:
+
+```bash
+git add .
+git commit -m "your message"
+git push
+npm run deploy
+```
 
 ---
 
-Built with ❤️ by Alfath Roziq Widhayaka
+Built by Alfath Roziq Widhayaka
