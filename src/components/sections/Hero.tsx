@@ -51,7 +51,10 @@ const Hero = () => {
                     className="flex-1 text-center lg:text-left"
                 >
                     {/* Badge */}
-                    <motion.div variants={itemVariants} className="inline-flex items-center gap-2 mb-6">
+                    <motion.div variants={itemVariants} className="inline-flex items-center gap-2 mb-6 flex-wrap">
+                        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#43d9ad]/15 text-[#43d9ad] border border-[#43d9ad]/25 tracking-wide uppercase">
+                            🎓 Fresh Graduate
+                        </span>
                         <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#6c63ff]/15 text-[#6c63ff] border border-[#6c63ff]/25 tracking-wide uppercase">
                             ✨ Open to Work
                         </span>

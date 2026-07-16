@@ -7,12 +7,8 @@ export const personalInfo = {
     fullName: 'Alfath Roziq Widhayaka',
     role: 'Full Stack Developer',
     tagline: 'Turning ideas into elegant digital experiences',
-    bio: `I'm a passionate Full Stack Developer with a strong focus on building clean, performant, 
-and user-centered web applications. I love diving deep into both frontend aesthetics and backend 
-architecture to deliver complete, production-ready solutions.`,
-    bioExtended: `With hands-on experience in modern web technologies, I bring ideas to life through 
-thoughtful code and clean UI. I'm always eager to learn new technologies and collaborate on 
-meaningful projects that make a real-world impact.`,
+    bio: `Fresh Graduate in Informatics from Sebelas Maret University with hands-on experience as a Full Stack Developer. I collaborate with cross-functional stakeholders to analyze business requirements, identify process constraints, and develop end-to-end web applications — from backend services and database management to frontend implementation.`,
+    bioExtended: `I am detail-oriented, adaptive, and committed to continuous learning. My core strengths include information systems development, database management (MySQL/PostgreSQL), API integration, and ensuring technical solutions align with operational needs and performance targets.`,
     location: 'Indonesia',
     email: 'alfathroziq94@gmail.com',
     phone: '+62 821-3844-9930',
@@ -24,7 +20,7 @@ meaningful projects that make a real-world impact.`,
     avatarPlaceholder: true,
     highlights: [
         { label: 'Experience', value: '2+ Years' },
-        { label: 'Focus', value: 'Web Development' },
+        { label: 'Focus', value: 'Full Stack Development' },
         { label: 'Availability', value: 'Open to Work' },
     ],
 };
@@ -34,33 +30,46 @@ export const skills = [
         category: 'Frontend',
         icon: '🎨',
         color: '#6c63ff',
-        items: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+        items: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React.js', 'Tailwind CSS'],
     },
     {
         category: 'Backend',
         icon: '⚙️',
         color: '#43d9ad',
-        items: ['Node.js', 'Express.js', 'REST API', 'PHP', 'Laravel'],
+        items: ['Node.js', 'REST API', 'PHP', 'Laravel'],
     },
     {
         category: 'Database',
         icon: '🗄️',
         color: '#ff6584',
-        items: ['MySQL', 'PostgreSQL', 'MongoDB', 'Firebase', 'Supabase'],
+        items: ['MySQL', 'PostgreSQL', 'Firebase'],
     },
     {
         category: 'Tools & DevOps',
         icon: '🛠️',
         color: '#ffd166',
-        items: ['Git', 'GitHub', 'VS Code', 'Figma', 'Postman', 'Linux', 'Vercel', 'Netlify'],
+        items: ['Git', 'GitHub', 'Figma', 'Postman', 'Linux', 'Vercel', 'Netlify'],
     },
     {
         category: 'Soft Skills',
         icon: '🧠',
         color: '#a29bfe',
-        items: ['Problem Solving', 'Teamwork', 'Communication', 'Adaptability', 'Time Management', 'Critical Thinking'],
+        items: ['Adaptive Problem Solving', 'Cross-Functional Coordination', 'Decision Making', 'Technical Communication', 'Priority Management', 'Results Orientation', 'Discipline', 'Initiative'],
     },
 ];
+
+export const education = {
+    university: 'Sebelas Maret University',
+    period: 'August 2022 – March 2026',
+    degree: "Bachelor's Degree in Informatics",
+    gpa: '3.83 / 4.00',
+    thesis: {
+        title: 'Medical Image Segmentation Using a Global Context-Aware and Progressive Channel-Split Fusion U-Net with Integrated Attention Mechanisms',
+        doi: 'https://doi.org/10.35882/jeeemi.v8i1.1371',
+    },
+    interests: ['Web Development', 'Software Engineering', 'Data Processing & Reporting', 'Business Process Optimization', 'Information Systems'],
+    languages: ['English', 'Bahasa'],
+};
 
 export const workExperiences = [
     {
