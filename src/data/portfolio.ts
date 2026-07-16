@@ -6,7 +6,7 @@ export const personalInfo = {
     name: 'Alfath',
     fullName: 'Alfath Roziq Widhayaka',
     role: 'Full Stack Developer',
-    tagline: 'Turning ideas into elegant digital experiences',
+    tagline: 'Building scalable web solutions from concept to deployment',
     bio: `Fresh Graduate in Informatics from Sebelas Maret University with hands-on experience as a Full Stack Developer. I collaborate with cross-functional stakeholders to analyze business requirements, identify process constraints, and develop end-to-end web applications — from backend services and database management to frontend implementation.`,
     bioExtended: `I am detail-oriented, adaptive, and committed to continuous learning. My core strengths include information systems development, database management (MySQL/PostgreSQL), API integration, and ensuring technical solutions align with operational needs and performance targets.`,
     location: 'Indonesia',
