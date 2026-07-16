@@ -3,6 +3,7 @@ import Footer from './components/layout/Footer';
 import BackToTop from './components/layout/BackToTop';
 import Hero from './components/sections/Hero';
 import About from './components/sections/About';
+import Experience from './components/sections/Experience';
 import Skills from './components/sections/Skills';
 import Projects from './components/sections/Projects';
 import Organizations from './components/sections/Organizations';
@@ -16,6 +17,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Experience />
         <Skills />
         <Projects />
         <Organizations />
