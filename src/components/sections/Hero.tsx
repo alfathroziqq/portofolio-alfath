@@ -159,7 +159,7 @@ const Hero = () => {
                             className="absolute -bottom-4 -left-8 glass rounded-xl px-4 py-3 border border-white/5"
                         >
                             <p className="text-[#9999b3] text-xs">Experience</p>
-                            <p className="text-white font-bold text-sm">2+ Years</p>
+                            <p className="text-white font-bold text-sm">1+ Years</p>
                         </motion.div>
 
                         {/* Floating badge - Projects */}

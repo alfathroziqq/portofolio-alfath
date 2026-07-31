@@ -211,7 +211,7 @@ const About = () => {
                         <motion.div variants={itemVariants} className="grid grid-cols-3 gap-4 mt-2">
                             {[
                                 { value: '10+', label: 'Projects' },
-                                { value: '2+', label: 'Years Exp' },
+                                { value: '1+', label: 'Years Exp' },
                                 { value: '100%', label: 'Dedication' },
                             ].map((stat) => (
                                 <div
