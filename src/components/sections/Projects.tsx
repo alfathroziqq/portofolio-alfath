@@ -98,6 +98,8 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project, index }: ProjectCardProps) => {
+    const demoLabel = project.demoLink ? new URL(project.demoLink).hostname.replace(/^www\./, '') : '';
+
     return (
         <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -156,15 +158,17 @@ const ProjectCard = ({ project, index }: ProjectCardProps) => {
 
                 {/* Links */}
                 <div className="flex gap-3 pt-4 border-t border-[#2a2a3d]">
-                    <a
-                        href={project.demoLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg bg-[#6c63ff]/10 border border-[#6c63ff]/20 text-[#6c63ff] text-xs font-medium hover:bg-[#6c63ff]/20 transition-all duration-200"
-                    >
-                        <ExternalLink size={13} />
-                        Live Demo
-                    </a>
+                    {project.demoLink && (
+                        <a
+                            href={project.demoLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex-1 flex items-center justify-center gap-2 py-2 rounded-lg bg-[#6c63ff]/10 border border-[#6c63ff]/20 text-[#6c63ff] text-xs font-medium hover:bg-[#6c63ff]/20 transition-all duration-200"
+                        >
+                            <ExternalLink size={13} />
+                            {demoLabel}
+                        </a>
+                    )}
                     <a
                         href={project.githubLink}
                         target="_blank"
