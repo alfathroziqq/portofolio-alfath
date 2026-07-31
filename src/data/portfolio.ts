@@ -16,7 +16,7 @@ export const personalInfo = {
     linkedin: 'https://www.linkedin.com/in/alfath-roziq-widhayaka',
     github: 'https://github.com/alfathroziqq',
     instagram: 'https://www.instagram.com/alfathroziq/',
-    cvLink: '/cv-alfath-roziq-widhayaka.pdf',
+    cvLink: `${import.meta.env.BASE_URL}cv-alfath-roziq-widhayaka.pdf`,
     avatarPlaceholder: true,
     highlights: [
         { label: 'Experience', value: '2+ Years' },
